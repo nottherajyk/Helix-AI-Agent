@@ -1,0 +1,27 @@
+env_id: "HelixDesk-v1"
+version: "1.0.0"
+description: >
+  A Gymnasium-compatible RL environment where an agent manages a customer email
+  complaint queue by classifying tickets, assigning priorities, routing to employees,
+  and preventing complaint surges. Designed for the Meta PyTorch OpenEnv Hackathon.
+task_type: single-agent-sequential
+observation_space:
+  type: Box
+  shape: [42]
+  dtype: float32
+  low: -1.0
+  high: 1.0
+action_space:
+  type: MultiDiscrete
+  nvec: [3, 4, 6, 3]
+reward_range: [-1.0, 1.0]
+episode_length: 100
+entry_point: "helixdesk:HelixDeskEnv"
+gymnasium_version: ">=0.29.0"
+docker_image: "helixdesk-openenv:latest"
+tags:
+  - customer-service
+  - email-triage
+  - scheduling
+  - multi-objective
+  - hackathon
