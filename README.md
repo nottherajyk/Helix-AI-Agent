@@ -1,6 +1,6 @@
 # HelixDesk OpenEnv
 
-HelixDesk OpenEnv is a Gymnasium-compatible RL environment built for the Meta PyTorch OpenEnv Hackathon where an agent manages a realistic customer email queue — classifying, prioritising, routing, and preventing complaint surges.
+HelixDesk OpenEnv is a Gymnasium-compatible RL environment built for the Meta PyTorch OpenEnv Hackathon, where an agent manages a realistic customer email queue — classifying, prioritising, routing, and preventing complaint surges.
 
 ## Formulations
 
